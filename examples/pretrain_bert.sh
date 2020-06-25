@@ -5,7 +5,7 @@ WORLD_SIZE=1
 DATA_PATH=<Specify path and file prefix>_text_sentence
 CHECKPOINT_PATH=<Specify path>
 
-python pretrain_bert.py \
+python3.6 pretrain_bert.py \
        --num-layers 24 \
        --hidden-size 1024 \
        --num-attention-heads 16 \

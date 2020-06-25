@@ -9,7 +9,7 @@ DATA_PATH=<Specify path and file prefix>_text_document
 CHECKPOINT_PATH=<Specify path>
 
 
-python pretrain_gpt2.py \
+python3.6 pretrain_gpt2.py \
        --num-layers 24 \
        --hidden-size 1024 \
        --num-attention-heads 16 \
