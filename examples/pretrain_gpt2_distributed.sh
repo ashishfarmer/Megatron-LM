@@ -15,7 +15,7 @@ CHECKPOINT_PATH=<Specify path>
 
 DISTRIBUTED_ARGS="--nproc_per_node $GPUS_PER_NODE --nnodes $NNODES --node_rank $NODE_RANK --master_addr $MASTER_ADDR --master_port $MASTER_PORT"
 
-python -m torch.distributed.launch $DISTRIBUTED_ARGS \
+python3.6 -m torch.distributed.launch $DISTRIBUTED_ARGS \
        pretrain_gpt2.py \
        --model-parallel-size 1 \
        --num-layers 24 \
